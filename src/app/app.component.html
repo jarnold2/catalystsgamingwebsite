@@ -1,9 +1,14 @@
 <nav class='navbar navbar-expand navbar-light bg-light'>
-  <img src="../assets/images/cg.png" style="height: 150px; width: 150px;"/>
-  <ul class='nav nav-pills'>
-    <li><a class='nav-link' [routerLink]="['/']">Home</a></li>
-    <li><a class='nav-link' [routerLink]="['/who']">Who We Are</a></li>
-  </ul>
+  <div class="flex">
+    <img src="../assets/images/cg.png" class="logo"/>
+    <ul class='nav nav-pills flex'>
+      <li class="flex li-header"><a class='nav-link heading flex' [routerLink]="['/']">Home</a></li>
+      <li class="flex li-header"><a class='nav-link heading flex' [routerLink]="['/who']">Who We Are</a></li>
+      <li class="flex li-header"><a class='nav-link heading flex' href="https://www.youtube.com/catalystsgaming"><img alt="YouTube" class="header-icon-YT flex heading" src="../assets/images/youtube.png"></a></li>
+      <li class="flex li-header"><a class='nav-link heading flex' href="https://www.twitter.com/catalystsgaming"><img alt="Twitter" class="header-icon-TW flex heading" src="../assets/images/twitter.png"></a></li>
+      <li class="flex li-header"><a class='nav-link heading flex' href="https://www.facebook.com/catalystsgaming"><img alt="Facebook" class="header-icon-FB flex heading" src="../assets/images/facebook.png"></a></li>
+    </ul>
+  </div>
 </nav>
 <div class='container'>
   <router-outlet></router-outlet>
